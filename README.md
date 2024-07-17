@@ -38,24 +38,26 @@ Diagram of structure my projects:
 
 ```mermaid
 flowchart TB
-	id1(Angular CLI)
-	id2(LoginAndRegister)
-	id3(FileFtpMicroservice)
-	id4(FileMongoMicroservice)
-	id5(Kafka)
-	id6(MongoDB)
-	id7(FTP server)
-	id8(Prometheus)
-	id9(Grafana)
-	id10(PostgerSQL)
-	id1 == Register ==> id2
-	id3 == Save/Delete File ==> id7
-	id2 == Save User Details ==> id10
-	id4 == Save Body Of Files ==> id6
-	id2 == Create Folder ==> id5 == Send Message ==> id3 == Save Body ==> id5 == Send Message ==> id4
-	id1 == Request ==> id4
-	id4 == Create/Delete ==> id5 == Send Message ==> id3
-	id10 -.-> id8 -.-> id9
+    id1(Angular CLI)
+    id2(Login and Register)
+    id3(File FTP Microservice)
+    id4(File Mongo Microservice)
+    id5(Kafka)
+    id6(MongoDB)
+    id7(FTP Server)
+    id8(Prometheus)
+    id9(Grafana)
+    id10(PostgreSQL)
+    
+    id1 == Register ==> id2
+    id3 == Save/Delete File ==> id7
+    id2 == Save User Details ==> id10
+    id4 == Save Body Of Files ==> id6
+    id2 == Create Folder ==> id5 == Send Message ==> id3 == Save Body ==> id5 == Send Message ==> id4
+    id1 == Request ==> id4
+    id4 == Create/Delete ==> id5 == Send Message ==> id3
+    id10 -.-> id8 -.-> id9
+
 	
 ```
 
