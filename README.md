@@ -14,11 +14,11 @@ Technologies in my project:
 	2. Grafana
 
 Links to code:
-1. LoginAndRegister - [https://github.com/Daniel200555/LoginAndRegister](https://github.com/Daniel200555/LoginAndRegister)
-2. FileFtpMicroservice - [https://github.com/Daniel200555/FileFtpMicroservice](https://github.com/Daniel200555/FileFtpMicroservice)
-3. FileMongoMicroservice - [https://github.com/Daniel200555/FileMongoMicroservice](https://github.com/Daniel200555/FileMongoMicroservice)
-4. ConfigServer - https://github.com/Daniel200555/ConfigServer
-5. Docker-Compose - [https://github.com/Daniel200555/runner](https://github.com/Daniel200555/runner)
+1. LoginAndRegister
+2.FileFtpMicroservice
+3. FileMongoMicroservice
+4. ConfigServer
+5. Docker-Compose
 
 Structure of microservices in my project:
 1. LoginAndRegister - this is microservice which create new user account and save new unique nickname, save email of new user and new **ENCODING** password in PostgreSQL database. After that register request send to FileFtpMicroservice message to create folder with unique nickname of user and also register function send to FileMongoMicroservice message to create body of user with unique name for to save body of files.
