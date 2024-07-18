@@ -26,7 +26,7 @@ Structure of microservices in my project:
 2. FileFtpMicroservice: This microservice works with an FTP server and manages user folders and files on the MyDrive site. It saves, deletes, and streams files by receiving Kafka messages from LoginAndRegister and FileMongoMicroservice.
 3. FileMongoMicroservice: This microservice interacts with MongoDB to save the body of files stored on the FTP server. It also handles file deletion and renaming.
 4. ConfigServer: This microservice sends configuration files to all microservices from the configuration repository on GitHub (https://github.com/Daniel200555/newconfig).
-5.Server: This is a central microservice (Eureka Server) that shows the status of all connected microservices (EurekaClient) and through which the Config Server can send configuration files (.xml) to all microservices.
+5. Server: This is a central microservice (Eureka Server) that shows the status of all connected microservices (EurekaClient) and through which the Config Server can send configuration files (.xml) to all microservices.
 
 The next version of my project:
 1. I will finish my Front-End side
