@@ -22,11 +22,11 @@ Links to code:
 6. [Angular Front-End](https://github.com/Daniel200555/angular-front)
 
 Structure of microservices in my project:
-1. LoginAndRegister - this is microservice which create new user account and save new unique nickname, save email of new user and new **ENCODING** password in PostgreSQL database. After that register request send to FileFtpMicroservice message to create folder with unique nickname of user and also register function send to FileMongoMicroservice message to create body of user with unique name for to save body of files.
-2. FileFtpMicroservice - this is microservice which enabled to ftp server and save in user folder, folders and files which user want to save in MyDrive site, delete this files and stream this files, all this function works by getting kafka messages from LoginAndRegister and FileMongoMicroservice.
-3. FileMongoMicroservice - this is microservice which enabled to MongoDB which save body of files which save files in FTP server, delete and rename files.
-4. ConfigServer - this is a microservice which send for all microservices configuration files from GitHub configuration repository (https://github.com/Daniel200555/newconfig)
-5. Server - this is a (Eureka Server) central microservice which by link can to show status about all microservices which enaable to this microservice like (EurekaClient) and via this microservice Config Server can to send for all microservices configaration files (.xml).
+1. LoginAndRegister: This microservice creates a new user account, saves a unique nickname, email, and encrypted password in a PostgreSQL database. After registration, it sends a message to the FileFtpMicroservice to create a folder with the user's unique nickname and another message to the FileMongoMicroservice to create a user record with a unique name to save the file bodies.
+2. FileFtpMicroservice: This microservice works with an FTP server and manages user folders and files on the MyDrive site. It saves, deletes, and streams files by receiving Kafka messages from LoginAndRegister and FileMongoMicroservice.
+3. FileMongoMicroservice: This microservice interacts with MongoDB to save the body of files stored on the FTP server. It also handles file deletion and renaming.
+4. ConfigServer: This microservice sends configuration files to all microservices from the configuration repository on GitHub (https://github.com/Daniel200555/newconfig).
+5.Server: This is a central microservice (Eureka Server) that shows the status of all connected microservices (EurekaClient) and through which the Config Server can send configuration files (.xml) to all microservices.
 
 The next version of my project:
 1. I will finish my Front-End side
