@@ -15,7 +15,7 @@ Technologies in my project:
 
 Links to code:
 1. LoginAndRegister
-2.FileFtpMicroservice
+2. FileFtpMicroservice
 3. FileMongoMicroservice
 4. ConfigServer
 5. Docker-Compose
