@@ -19,6 +19,7 @@ Links to code:
 3. [FileMongoMicroservice](https://github.com/Daniel200555/FileMongoMicroservice)
 4. [ConfigServer](https://github.com/Daniel200555/ConfigServer)
 5. [Docker-Compose](https://github.com/Daniel200555/runner)
+6. [Angular Front-End](https://github.com/Daniel200555/angular-front)
 
 Structure of microservices in my project:
 1. LoginAndRegister - this is microservice which create new user account and save new unique nickname, save email of new user and new **ENCODING** password in PostgreSQL database. After that register request send to FileFtpMicroservice message to create folder with unique nickname of user and also register function send to FileMongoMicroservice message to create body of user with unique name for to save body of files.
